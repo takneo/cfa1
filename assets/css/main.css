@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'gobCL';
-    src: url('../fonts/gobCL-Light.woff') format('woff');
+    src: url('assets/fonts/gobCL-Light.woff') format('woff');
  }
 
  
@@ -432,7 +432,7 @@ nav{
 
 @media (min-width: 700px) {
 #imgsidebar {
-    background: url(/assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
+    background: url(assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
   height:80%;
   right:0;
   position: absolute;
@@ -446,7 +446,7 @@ background-repeat: no-repeat;
 
 @media (min-width: 1440px) {
     #imgsidebar {
-        background: url(/assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
+        background: url(assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
         height:75vh;
         right:0;
         position: absolute;
@@ -474,7 +474,7 @@ background-repeat: no-repeat;
 
 @media (max-width: 700px) {
     .home-intro {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(/assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;   
@@ -536,7 +536,7 @@ background-repeat: no-repeat;
 
 /* DOTTED BACKGROUND */
 .fondo-moteado {
-    background: url(/assets/images/pt-dotted.png);
+    background: url(assets/images/pt-dotted.png);
     background-repeat: repeat;
     background-size: 2%;
     min-height: 60vh;
@@ -629,7 +629,7 @@ background-repeat: no-repeat;
 
 .fondo-checker {
     padding: 50px;
-    background: url(/assets/images/Patron_Cuadrados_Gris.png);
+    background: url(assets/images/Patron_Cuadrados_Gris.png);
 }
 
 .button-center{
@@ -639,7 +639,7 @@ background-repeat: no-repeat;
 
 .fondo-imgplanta {
     padding: 50px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(/assets/images/providence-doucet-mE5MBZX5sko-unsplash.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(assets/images/providence-doucet-mE5MBZX5sko-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;    
@@ -750,7 +750,7 @@ background-repeat: no-repeat;
 }
 
 .footer {
-    background: url(/assets/images/Patron_Cuadrados_Azul.png);
+    background: url(assets/images/Patron_Cuadrados_Azul.png);
 }
 
 .footer h2, .footer h4, .footer p {
