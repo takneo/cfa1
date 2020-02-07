@@ -1,0 +1,931 @@
+/* Hoja de estilos Chile Facilitadores */
+/* Takeshi Fukushi @METRIK */
+/* Enero 2020 */
+
+
+/*font*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@font-face {
+    font-family: 'gobCL';
+    src: url('/assets/fonts/gobCL-Light.woff') format('woff');
+ }
+
+ 
+
+/* Variables globales */
+
+:root {
+ --dotted-bg: #ffffff;
+ --dots: #e6e7e9;
+
+
+ --of-rojo: #E22C2C;
+ --of-azul: #0F69B4;
+ --of-azul-oscuro: #001C41;
+ --of-verde: #2D717C;
+ --of-naranjo-oscuro: #E0701E;
+ --of-naranjo-claro: #FFA11B;
+ --of-morado: #6633CC;
+ --of-negro: #111111;
+ --of-gris-orscuro: #4A4A4A;
+ --of-gris-claro: #A8B7C7;
+
+}
+
+/* Estilos General */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    font-size: 14px;
+    background: #eeeeee;
+}
+
+h1, h2 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'gobCL', sans-serif;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+h3,h4,h5,h6 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #001c41;
+    font-weight: lighter;
+    line-height: 120%;
+}
+
+.home-intro h4 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+@media (max-width: 700px) {
+    .home-intro h4 {
+        font-weight: 300;
+        font-size: 1.5em;
+        color: var(--white);
+    }
+
+}
+
+
+p {
+    margin: 8px 0;
+    line-height: 24px;
+}
+
+a:hover {
+    color: #0f69b5;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.segments {
+    padding: 75px 0 75px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    margin: 0 25%;
+}
+
+.section-title .line {
+    background: #333;
+    height: 3px;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.bg-second {
+    background-color: #f8f8f8;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.about img {
+    width: 100%;
+}
+
+/* Animaciones */
+
+@keyframes vertimove {
+    0% {
+        -webkit-transform: translateY(0);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateY(0);
+        /* IE 9 */
+        transform: translateY(0);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    50% {
+        -webkit-transform: translateY(20px);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateY(20px);
+        /* IE 9 */
+        transform: translateY(20px);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes mymove {
+    0% {
+        -webkit-transform: scale(0);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: scale(0);
+        /* IE 9 */
+        transform: scale(0);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    50% {
+        -webkit-transform: scale(1, 1);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: scale(1, 1);
+        /* IE 9 */
+        transform: scale(1, 1);
+        /* Firefox 16+, IE 10+, Opera */
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: scale(1, 1);
+        /* IE 9 */
+        transform: scale(1, 1);
+        /* Firefox 16+, IE 10+, Opera */
+        opacity: 0;
+    }
+}
+
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.section-descripcion {
+    display: flex;
+    margin: 20px 0;
+}
+
+.section-descripcion p {
+    font-size: 1.3em;
+}
+
+
+.my-row {
+    border: blue dotted 1px;
+
+}
+
+.sm-row a {
+    padding: 0 10px;
+}
+
+
+/*button default*/
+
+.button {
+    color: var(--of-azul);
+    position: relative;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 14px;
+    z-index: 0;
+    border-radius: 30px;
+    transition: all .4s ease;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: var(--of-azul-oscuro);
+    border: 2px solid #3a389f;
+}
+
+
+    /* 
+    ##############################
+    # NAVBAR #
+    ##############################
+     */
+.loginbutton:hover, .aboutbutton:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: inherit;
+ }
+
+.navbar-nav .nav-item .nav-link{
+	font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+   text-align: center;
+
+}
+
+.navbar-dark {
+    background-color: var(--of-azul-oscuro)
+}
+
+@media (min-width: 990px) {
+
+.navbar-nav .nav-item .nav-link{
+   color: var(--of-azul-oscuro);
+}
+}
+
+/* Logo Chile Facilitadores */
+
+.cf-logo {
+    max-height: 62px;
+}
+
+@media (max-width: 320px) {
+
+    .cf-logo {
+        max-height: 40px;
+    }
+}
+
+
+.dropdown-item:hover{
+    background-color:#ffffff;
+    color:#fff;
+}
+
+
+nav{
+    -webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+	}
+
+.bg-gobierno {
+    background-color: var(--of-azul-oscuro);
+}
+
+.navbar-collapse.navbar-collapse.collapsing > ul li {
+    background-color: var(--of-azul-oscuro);
+    border: none;
+    margin-left: 0;
+}
+
+.navbar-collapse.navbar-collapse.show > ul li {
+    background-color: var(--of-azul-oscuro);
+    border: none;
+    margin-left: 0;
+}
+
+/* .navbar-collapse.collapsing,
+.navbar-collapse.show {
+
+} */
+
+.navbar-collapse.collapsing .nav-link {
+    padding: 25px 0;
+}
+
+.navbar-collapse.show .nav-link {
+    padding: 25px 0;
+}
+
+    /* 
+    ##############################
+    # NAVBAR #
+    ##############################
+     */
+
+
+
+.information-section ul {
+    list-style: none;
+}
+
+.navbar .navbar-nav li a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #222;
+    transition: .5s ease;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+    vertical-align: middle;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #fff;
+}
+
+
+/*home intro*/
+
+
+.dropdown-divider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-color: rgba(165, 165, 165, 0.3);
+}
+
+
+.home-intro .content {
+    padding: 150px 0 140px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+.home-intro .content-text {
+    padding: 170px 0 160px 80px;
+}
+}
+
+.home-intro .content-text {
+    padding: 170px 0 160px 0;
+}
+
+.searchsuggest {
+    color: var(--of-gris-orscuro);
+    text-decoration: none;
+}
+
+.information-section a {
+    color: var(--of-gris-claro);
+    text-decoration: none;
+}
+
+
+.home-intro .button {
+    color: var(--white);
+    display: inline-block;
+    margin-top: 25px;
+    background-color: var(--of-azul);
+}
+
+.home-intro .button:hover {
+    background: #384b9f;
+    border-color: #383a9f;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media (min-width: 700px) {
+#imgsidebar {
+    background: url(/assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
+  height:80%;
+  right:0;
+  position: absolute;
+  min-width: 40vw;
+  border-top-left-radius: 50%;
+border-bottom-left-radius: 50%;
+background-size: cover;
+background-repeat: no-repeat;
+}
+}
+
+@media (min-width: 1440px) {
+    #imgsidebar {
+        background: url(/assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
+        height:75vh;
+        right:0;
+        position: absolute;
+        border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    }
+
+.aboutbutton {
+    border: white solid 1px;
+    color: white;
+    border-radius: 5px;
+}
+
+.loginbutton {
+    margin-left: 2em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+/* Mobile Adjustments */
+
+@media (max-width: 700px) {
+    .home-intro {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(/assets/images/connectivity-couples-playing-beautiful-cheerful.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    min-height: 100vh;
+    }
+
+    h1 {
+        color: var(--white);
+        text-align: center;
+    }
+
+}
+
+
+.tagbutton-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+
+}
+
+.tagbutton-container ul {
+        padding: 5px 15px;  
+    }
+
+    
+
+.tagbutton-container li {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 2px 5px;
+    border: 1px solid var(--of-gris-orscuro);
+    border-radius: 25px;
+    list-style-type: none;
+    color: var(--of-gris-orscuro);
+    
+
+}
+
+
+.tagbutton:hover {
+    border: var(--of-azul) solid 1px;
+    cursor: pointer;
+    color: var(--of-azul);
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+@media (max-width: 768px) {
+    .tagbutton-container li {
+        color: white;
+        border: white solid 1px;
+    }
+
+    .searchsuggest {
+        color: var(--of-gris-claro);
+    }
+}
+
+/* DOTTED BACKGROUND */
+.fondo-moteado {
+    background: url(/assets/images/pt-dotted.png);
+    background-repeat: repeat;
+    background-size: 2%;
+    min-height: 60vh;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .fondo-moteado {
+        background-size: 6%;
+    }
+}
+
+.pr-link {
+    color: var(--of-azul);
+    text-decoration: underline;
+    font-weight:  bold;
+}
+
+.pr-link:hover{
+    cursor: pointer;
+}
+
+.fondo-moteado .fa {
+    color: var(--of-azul);
+}
+
+/* Imágenes Sección Contenido */
+
+
+.img-responsive {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+.img-responsive-right {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    .img-responsive {
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 10px;
+        height: 300px;
+        width: 300px;
+        
+    }
+
+    .img-responsive-right {
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 10px;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.section-container .button {
+    color: var(--of-azul);
+    border: var(--of-azul) solid 1px;
+    background-color: var(--dots);
+    width: 10em;
+}
+
+.section-container .button:hover {
+    cursor: pointer;
+    border: var(--of-azul-oscuro) solid 1px;
+    color: var(--white);
+}
+
+
+.card-text {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 0.3rem;
+  background-color: white;
+  padding: 30px 30px;
+}
+
+.fondo-checker {
+    padding: 50px;
+    background: url(/assets/images/Patron_Cuadrados_Gris.png);
+}
+
+.button-center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fondo-imgplanta {
+    padding: 50px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(/assets/images/providence-doucet-mE5MBZX5sko-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    min-height: 50vh;
+    text-align: center;
+}
+
+.fondo-imgplanta h1 {
+    color: white;
+}
+
+.fondo-imgplanta .button {
+    margin-top: 100px;
+    background-color: var(--of-azul);
+    color: var(--white);
+}
+
+.fondo-imgplanta .button:hover {
+    margin-top: 100px;
+    background-color: var(--of-azul);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+.spacething-mb {
+    padding-top: 5vh;
+}
+}
+
+.spacething {
+    padding-top: 5vh;
+}
+
+.spacething-mb .button:hover {
+
+    transform: scale(1.1);
+    background-color: var(--of-verde);
+    color: var(--white);
+    border: none;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fondo-rojo {
+    background-color: var(--of-rojo);
+    min-height: 300px;
+    color: white;
+}
+
+.fondo-rojo h2 {
+    margin-top: 50px;
+    color: white;
+}
+
+.fondo-azul {
+    background-color: var(--of-azul-oscuro);
+    height: 300px;
+}
+
+
+.information-section {
+    padding: 50px 25px;
+}
+
+.my-col {
+    border: red dotted 4px;
+}
+
+
+.my-3 {
+    font-weight: lighter;
+    color: var(--of-azul-oscuro)
+}
+
+.information-section p {
+    margin-top: 2em;
+}
+
+.information-section button {
+    background-color: none;
+    margin-top: 25px;
+}
+
+.information-section button:hover {
+    background: var(--of-azul);
+}
+
+.information-section .row {
+    padding: 25px 0;
+}
+.capacitacion-section h3 {
+    color: var(--of-azul-oscuro);
+    font-weight: 300;
+}
+
+.capacitacion-section button {
+    background-color: var(--of-verde);
+    width: 15em;
+    height: 3em;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.spacer {
+    padding: 5vh;
+}
+
+.footer {
+    background: url(/assets/images/Patron_Cuadrados_Azul.png);
+}
+
+.footer h2, .footer h4, .footer p {
+ color: var(--white);
+}
+
+.background-image-container2 {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 12% 0;
+}
+
+.searchsuggest::after {
+    content: "\25BE";
+}
+
+.searchsuggest.active::after {
+    content: "\25B4";
+    
+}
+
+
+/* Estilos Específicos para Acerca De */
+/* 
+##############
+ */
+
+.about-background-image-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/ben-white-gGbuETcoKjw-unsplash.jpg');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15% 0 5% 0;
+}
+
+
+.about-background-image-container h1 {
+    color: var(--white);
+    font-size: 4em;
+} 
+
+.about-background-image-container h2 {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: var(--white);
+} 
+.about-background-image-container p {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+
+    .about-background-image-container {
+        padding: 25vh 0 15% 0;
+    }
+
+    .about-background-image-container h1 {
+        font-size: 3em;
+        padding-top: 15vh;
+    } 
+
+    .about-background-image-container h2 {
+        font-size: 1em;
+    } 
+}
+
+.section-container-spacer{
+    margin-bottom:30px
+}
+
+.border-section-container{
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee
+}
+
+.about-section-container{
+    padding:60px 0
+} 
+
+.about-section-container h2 {
+    font-size: 3em;
+    color: var(--of-azul-oscuro);
+}
+
+.about-section-container .fa {
+    color: var(--of-azul);
+}
+
+.about-section-container h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: var(--of-azul);
+}
+
+.carousel-section {
+    background-color: var(--of-azul-oscuro);
+}
+
+.carousel-section h2 {
+    color: var(--white);
+}
+
+.news-section h4 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.news-section h3 {
+    font-family: 'gobCL', sans-serif;
+    color: var(--of-azul-oscuro);
+}
+
+.news-section img {
+    border-radius: 5px;
+}
+
+
+/* Review Carousel */
+
+.review-section {
+    background-color: var(--of-azul-oscuro);
+}
+
+.review-section h2 {
+    color: var(--white);
+    padding-bottom: 5vh;
+}
+
+.review-section p {
+    color: var(--white);
+font-style: italic;
+font-size: 1.2em;
+line-height: 1.5em;
+text-align: center;
+font-weight: 200;
+
+}
+.review-section p::before {
+    content: open-quote;
+}
+
+.review-section p::after {
+    content: close-quote;
+}
+
+.review-section h5, .review-section h6 {
+    color: var(--white);
+    font-size: 1em;
+
+}
+
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+
+.carousel .review-carousel-indicators {
+	bottom: -60px;
+}
+
+/* Review Carousel */
