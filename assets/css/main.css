@@ -750,7 +750,7 @@ background-repeat: no-repeat;
 }
 
 .footer {
-    background: url('cfa1/assets/images/Patron_Cuadrados_Azul.png');
+    background: url('/cfa1/assets/images/Patron_Cuadrados_Azul.png');
 }
 
 .footer h2, .footer h4, .footer p {
@@ -781,7 +781,7 @@ background-repeat: no-repeat;
  */
 
 .about-background-image-container {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cfa1/assets/images/ben-white-gGbuETcoKjw-unsplash.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/cfa1/assets/images/ben-white-gGbuETcoKjw-unsplash.jpg');
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
