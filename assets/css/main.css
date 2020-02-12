@@ -536,7 +536,7 @@ background-repeat: no-repeat;
 
 /* DOTTED BACKGROUND */
 .fondo-moteado {
-    background: url('cfa1/assets/images/pt-dotted.png');
+    background: url('/cfa1/assets/images/pt-dotted.png');
     background-repeat: repeat;
     background-size: 2%;
     min-height: 60vh;
